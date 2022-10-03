@@ -195,3 +195,48 @@ header {
             width: calc(100% / 3);
         }
     }
+
+
+    @media screen and ( min-width:768px) {
+
+        .about-us .col {
+            width: calc(100% / 2);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+        }
+    }
+
+    @media screen and ( min-width:992px) {       
+        .about-us {           
+            padding: 20px 300px;
+        }
+        .about-us .col {
+            display: flex;
+            width: calc(100% / 2);
+        }   
+    }
+
+    .footer-top {
+        background-color: var(--second-color);
+    }
+
+    .footer-bottom {
+        background-color: #333333;
+    }
+
+    .col-footer-top {
+        text-align: center;
+    }
+
+    .btn-footer {
+        display: block;
+        margin: auto;
+    }
+
+    .col-footer-bottom {
+        text-align: center;
+        color: white;
+        padding: 40px 25px;
+    }
