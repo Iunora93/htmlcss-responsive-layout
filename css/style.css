@@ -160,7 +160,38 @@ header {
     }
 
     /* quarta sezione */
-
     .benefits {
         background-color: var(--second-color);
+    }
+
+    .col-benefits {
+        background-color: white;   
+    }
+
+    .col-title {
+        color: white;
+        text-align: center;
+        margin: auto;
+    }
+
+    /* -----------
+    TABLET QUARTA SEZIONE
+    -------------- */
+    @media screen and ( min-width:768px) {        
+        .benefits .col {
+            display: flex;
+            flex-wrap: wrap;
+            width: calc(100% / 2);
+        }
+    }
+
+    /* -----------
+    DESKTOP QUARTA SEZIONE
+    -------------- */
+    @media screen and ( min-width:992px) {        
+        .benefits .col {
+            display: flex;
+            flex-wrap: wrap;
+            width: calc(100% / 3);
+        }
     }
