@@ -7,11 +7,26 @@
     box-sizing: border-box;
 }
 
+/* ------------
+    COMMON
+------------ */
 .container {
     max-width: 68.75rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     margin: auto;
+}
+
+:root {
+    --first-color: #0084fd;
+    --first-color-light: #b5ddff;
+    --second-color: #9792e4;
+    
+    --space-xs
+    --space-sm
+    --space-md
+    --space-lg
+    --space-xl
 }
 
 .row {
@@ -20,6 +35,7 @@
     margin-left: -0.625rem;
     margin-right: -0.625rem;
 }
+
 .list-inline {
     display: flex;
     list-style: none;
@@ -28,17 +44,6 @@
     align-items: flex-end;
 }
 
-:root {
-    --first-color: #0084fd;
-    --first-color-light: #b5ddff;
-    --second-color: pink;
-    
-    --space-xs
-    --space-sm
-    --space-md
-    --space-lg
-    --space-xl
-}
 
 header {
     background-color: var(--first-color);
@@ -50,13 +55,27 @@ header {
     display: none;
 }
 
+/* --------------
+    HEADER TABLET
+---------------*/
 @media screen and ( min-width:768px) {
-
+    .container {
+        width: 100%;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
     .hamburger {
         display: none;
-    }
+        
+    } 
     .main-nav {
         display: block;
+    }
+    .list-inline {
+        display: block;
+        display: flex;
     }
 }
 
@@ -64,6 +83,12 @@ header {
     justify-content: space-between;
 }
 
+
+/* -----------
+    MAIN
+    ---------- */
+
+    /* prima sezione */
 .card-debug {
     background-color: var(--first-color-light);
     height: 100px;
@@ -86,6 +111,8 @@ header {
         width: calc((100% / 3) * 2);
     }
 }
+
+/* seconda sezione */
 .strategic {
     background-color: var(--second-color);
 }
@@ -94,9 +121,40 @@ header {
  margin: .625rem 0;
 }
 
+/* ----------
+    TABLET
+    --------- */
 @media screen and ( min-width:768px) {
 
     .strategic .col {
-        width: 50%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
     }
 }
+
+/* ----------
+    DESKTOP
+    --------- */
+    @media screen and ( min-width:992px) {       
+        .strategic {           
+            padding: 20px 300px;
+        }
+        .strategic .col {
+            display: flex;
+            width: calc(100% / 2);
+        }   
+    }
+
+    /* terza sezione */
+
+    .card-title, .card-testimonials {
+        text-align: center;
+    }
+    .card-testimonials {
+        background-color: var(--second-color);       
+        width: 100%;
+        text-align: center;
+    }
