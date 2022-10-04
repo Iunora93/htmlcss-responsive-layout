@@ -62,6 +62,7 @@ header {
 
 .logo {
     margin-left: 20px;
+    margin-top: 25px;
 }
 
 .hamburger {
@@ -77,6 +78,22 @@ header {
 
 .main-nav {
     display: none;
+}
+
+.title-col {
+    color: var(--first-color);
+    padding: 30px 0;
+}
+
+button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.icons-big {
+    font-size: 50px;
+    color: var(--first-color);
+    
 }
 
 /* --------------
@@ -163,6 +180,13 @@ header {
     background-color: var(--first-color-light);
     border-radius: 20px;
     padding: 20px;
+    text-align: center;    
+}
+
+.card-diferent {
+    text-align: left;
+    padding-bottom: 0;
+    
 }
 
 .hightlights .col {
@@ -182,6 +206,7 @@ header {
 }
 .img-firstcol {
     width: 100%;
+    margin-bottom: none;
 }
 
 @media screen and (min-width: 426px) {
@@ -194,8 +219,15 @@ header {
 }
 
 @media screen and (min-width:992){
-    .img-firstcol {
+    .card-diferent {
         display: flex;
+        width: calc(100% / 2);
+    }
+    .col-left {
+        width: 50%;
+    }
+    .col-right {
+        width: 50%;
     }
     
 }
@@ -234,6 +266,7 @@ header {
             display: flex;
             width: calc(100% / 2);
         }   
+
     }
 
     /* terza sezione */
