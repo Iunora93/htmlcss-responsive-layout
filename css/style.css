@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* ------------
     COMMON
 ------------ */
@@ -97,6 +101,7 @@ header {
     .list-inline {
         display: block;
         display: flex;
+        align-items: center;
     }
     a {
         text-decoration: none; 
@@ -104,6 +109,14 @@ header {
     }
     li {
         margin-left: 10px;
+    }
+
+    .btn-padding {
+        padding: 10px;
+        background-color: white;
+        color: black;
+        border-radius: 40px;
+        border: none;
     }
     
 }
@@ -127,6 +140,18 @@ header {
     li {
         margin-left: 10px;
     }
+    .list-inline {
+        display: flex;
+        align-items: center;
+
+    }
+    .btn-padding {
+        padding: 10px;
+        background-color: white;
+        color: black;
+        border-radius: 40px;
+        border: none;
+    }
 }
 
 /* -----------
@@ -136,7 +161,7 @@ header {
     /* prima sezione */
 .card-debug {
     background-color: var(--first-color-light);
-    height: 100px;
+    border-radius: 20px;
 }
 
 .hightlights .col {
