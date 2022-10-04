@@ -218,6 +218,13 @@ button {
     }
 }
 
+@media screen and ( min-width:768px) {
+    .diferent-tablet p {
+        padding-bottom: 330px;
+    }
+}
+
+
 @media screen and ( min-width:992px) {       
     
     .hightlights .card-diferent {
@@ -227,7 +234,15 @@ button {
     .card-debug.card-diferent {
         width: 100%;
     }
-
+    .col-left {
+        width: 50%;
+    }
+    .col-right {
+        width: 50%;
+    }
+    .diferent-tablet p {
+        padding-bottom: 35px;
+    }
 }
 
 /* seconda sezione */
