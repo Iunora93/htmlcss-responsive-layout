@@ -162,6 +162,7 @@ header {
 .card-debug {
     background-color: var(--first-color-light);
     border-radius: 20px;
+    padding: 20px;
 }
 
 .hightlights .col {
@@ -172,6 +173,16 @@ header {
 .col {
     padding: 1.23rem;
 }
+.btn-firstsection {
+    background-color: var(--first-color);
+    color: white;
+    border-radius: 40px;
+    padding: 15px 55px;
+    border: none;
+}
+.img-firstcol {
+    width: 100%;
+}
 
 @media screen and (min-width: 426px) {
     .hightlights .col {
@@ -180,6 +191,13 @@ header {
     .hightlights .col:first-child {
         width: calc((100% / 3) * 2);
     }
+}
+
+@media screen and (min-width:992){
+    .img-firstcol {
+        display: flex;
+    }
+    
 }
 
 /* seconda sezione */
