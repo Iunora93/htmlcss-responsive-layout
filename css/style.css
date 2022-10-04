@@ -40,6 +40,9 @@
     display: flex;
     list-style: none;
 }
+
+
+
 .align-items-end {
     align-items: flex-end;
 }
@@ -49,6 +52,23 @@ header {
     background-color: var(--first-color);
     padding: 1.25rem 0;
     color: white;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.hamburger {
+    margin-right: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.bars {
+    color: white;
+    font-size: 20px;
 }
 
 .main-nav {
@@ -72,17 +92,42 @@ header {
     } 
     .main-nav {
         display: block;
+        margin-right: 20px;
     }
     .list-inline {
         display: block;
         display: flex;
     }
+    a {
+        text-decoration: none; 
+        color: white;
+    }
+    li {
+        margin-left: 10px;
+    }
+    
 }
 
 .justify-space-between {
     justify-content: space-between;
 }
 
+@media screen and ( min-width: 992px ) {
+    .hamburger {
+        display: none;
+    }
+    .main-nav {
+        display: block;
+        margin-right: 20px;
+    }
+    a {
+        text-decoration: none; 
+        color: white;
+    }
+    li {
+        margin-left: 10px;
+    }
+}
 
 /* -----------
     MAIN
