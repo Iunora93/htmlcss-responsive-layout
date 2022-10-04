@@ -218,18 +218,16 @@ button {
     }
 }
 
-@media screen and (min-width:992){
-    .card-diferent {
+@media screen and ( min-width:992px) {       
+    
+    .hightlights .card-diferent {
         display: flex;
         width: calc(100% / 2);
+    }   
+    .card-debug.card-diferent {
+        width: 100%;
     }
-    .col-left {
-        width: 50%;
-    }
-    .col-right {
-        width: 50%;
-    }
-    
+
 }
 
 /* seconda sezione */
@@ -244,7 +242,7 @@ button {
 /* ----------
     TABLET
     --------- */
-@media screen and ( min-width:768px) {
+@media screen and (min-width:768px) {
 
     .strategic .col {
         width: 100%;
