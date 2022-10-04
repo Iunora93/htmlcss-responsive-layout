@@ -92,8 +92,17 @@ button {
 
 .icons-big {
     font-size: 50px;
-    color: var(--first-color);
-    
+    color: var(--first-color);   
+}
+
+img {
+    width: 100%;
+}
+
+.arrow-down {
+    background-color: var(--second-color);
+    padding: 20px;
+    border-radius: 100%;
 }
 
 /* --------------
@@ -254,6 +263,28 @@ button {
  margin: .625rem 0;
 }
 
+.col.col-down {
+    background-color: white;
+    border-radius: 40px;
+    margin: 30px;
+    text-align: center;
+}
+
+.cursive {
+    font-style: italic;
+    margin: 30px;
+    font-size: 14px;
+}
+
+.white {
+    color: white;
+    margin: 50px 0;
+}
+
+.col.col-top {
+    margin: 30px 30px 0 30px;
+}
+ 
 /* ----------
     TABLET
     --------- */
@@ -266,19 +297,50 @@ button {
         justify-content: center;
         margin: auto;
     }
+    .col.col-top {
+        margin: 100px;
+        text-align: left;
+    }
+    .white-title {
+        font-size: 50px;
+        text-align: left;   
+    }
+    .white-p {
+        margin-bottom: 0;
+    }
+    .col-top {
+        text-align: left;
+    }
+    .col.col-down{
+        margin: 100px;
+    }
 }
 
 /* ----------
     DESKTOP
     --------- */
     @media screen and ( min-width:992px) {       
-        .strategic {           
+        /* .strategic {           
             padding: 20px 300px;
-        }
+        } */
         .strategic .col {
             display: flex;
             width: calc(100% / 2);
-        }   
+        } 
+
+        .col-top {
+            width: 50%;
+        }
+
+        .col-right {
+            width: 50%;
+        }
+        /* .column {
+            display: flex;
+        }   */
+        
+
+        
 
     }
 
