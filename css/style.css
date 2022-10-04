@@ -320,28 +320,13 @@ img {
     DESKTOP
     --------- */
     @media screen and ( min-width:992px) {       
-        /* .strategic {           
+        .strategic {           
             padding: 20px 300px;
-        } */
+        }
         .strategic .col {
             display: flex;
             width: calc(100% / 2);
         } 
-
-        .col-top {
-            width: 50%;
-        }
-
-        .col-right {
-            width: 50%;
-        }
-        /* .column {
-            display: flex;
-        }   */
-        
-
-        
-
     }
 
     /* terza sezione */
